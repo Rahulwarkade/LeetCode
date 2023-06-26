@@ -4,16 +4,9 @@ using namespace std;
 class Solution {
 public:
     bool isValid(string s) {
-        map<char,char> parentheses;
-        parentheses['{'] = 1;
-        parentheses['('] = 2;
-        parentheses['['] = 3;
-        parentheses['}'] = -1;
-        parentheses[')'] = -2;
-        parentheses[']'] = -3;
+        unordered_map<char,int> parentheses = {{'{',1},{'[',2},{'(',3},{'}',-1},{']',-2},{')',-3}};
 
         stack<char> st;
-
         for(int i=0; i<s.size(); i++)
         {
             if(parentheses[s.at(i)]>0)
@@ -43,4 +36,5 @@ int main()
     string str = "()";
 
     cout<<obj.isValid(str)<<endl;
+
 }
