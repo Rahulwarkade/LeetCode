@@ -24,10 +24,9 @@ class PlayGround
 	}
 	public static void main(String args[])
 	{
-		PlayGround ll = new PlayGround();
-		Node head = new Node(2);
-		head.next = new Node(3);
-		head.next.next = new Node(4);
-		printLL(head);
+
+		String[] arr = {"rahul","warkade"};
+
+		System.out.println(arr[0].length());
 	}
 }
