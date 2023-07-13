@@ -24,9 +24,9 @@ class PlayGround
 	}
 	public static void main(String args[])
 	{
+	    int arr[][][] = new int[3][2][3];
 
-		String[] arr = {"rahul","warkade"};
 
-		System.out.println(arr[0].length());
+		System.out.print(arr[2][1][2]);
 	}
 }
